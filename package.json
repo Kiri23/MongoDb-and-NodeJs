@@ -1,0 +1,36 @@
+{
+  "name": "mongodb_nodejs",
+  "version": "1.0.0",
+  "description": "test project ",
+  "main": "app.js",
+  "scripts": {
+    "test": "start: \"node app.js\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kiri23/MongoDb-and-NodeJs.git"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "jade": "~1.11.0",
+    "mongoose": "^4.9.3",
+    "morgan": "~1.8.1",
+    "serve-favicon": "~2.4.2"
+  },
+  "keywords": [
+    "mongodb",
+    "nodejs",
+    "mongoose",
+    "mlab",
+    "server"
+  ],
+  "author": "Christian Nogueras Rosado",
+  "license": "MIT ",
+  "bugs": {
+    "url": "https://github.com/Kiri23/MongoDb-and-NodeJs/issues"
+  },
+  "homepage": "https://github.com/Kiri23/MongoDb-and-NodeJs#readme"
+}
