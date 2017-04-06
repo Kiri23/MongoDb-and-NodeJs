@@ -8,6 +8,7 @@ var mongoose = require('mongoose');
 var index = require('./routes/index');
 var addUser = require('./routes/addUser');
 var users = require('./routes/users');
+var kitySchema = require('./model/kitySchema.js');
 
 var app = express();
 var db = mongoose.connection
@@ -52,7 +53,11 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.send("error page not found");
 });
+
+app.listen(3000, function () {
+  // console.log('App listening on port 3000!')
+})
 
 module.exports = app;

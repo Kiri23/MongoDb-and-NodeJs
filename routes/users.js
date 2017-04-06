@@ -3,14 +3,28 @@ var router = express.Router();
 var mongoose = require('mongoose');
 var kitySchema = require('../model/kitySchema');
 
+var kitten;
+
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
 
+router.get('/s', (req, res, next) => {
+    res.send("value");
+});
+
 router.get('/search', (req, res, next) => {
-    
-    // res.send("hola retrieving user");
+  kitySchema.find(function (err, kittens) {
+      if (err) return console.error(err);
+      kitten = kittens[0].name
+      console.log(kitten);
+     res.send("Usuario: "+kittens[0].name);
+});
+
+ // res.send("hola retrieving user: " + kitten);
+
+
 });
 
 module.exports = router;
