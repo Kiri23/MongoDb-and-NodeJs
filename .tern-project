@@ -1,0 +1,31 @@
+{
+  "ecmaVersion": 6,
+  "libs": [
+    "browser",
+    "jquery",
+    "underscore"
+  ],
+  "plugins": {
+    "node": {
+      "dontLoad": "",
+      "load": "",
+      "modules": ""
+    },
+    "node-express":{}
+    ,
+    "doc_comment": {
+      "fullDocs": true,
+      "strong": false
+    },
+    "modules": {
+      "dontLoad": "",
+      "load": "",
+      "modules": ""
+    },
+    "node_resolve": {}
+  },
+  "loadEagerly": [
+    "mongoose"
+  ],
+  "dontLoad": []
+}
