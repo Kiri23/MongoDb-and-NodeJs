@@ -4,7 +4,6 @@
   "description": "test project ",
   "main": "index.js",
   "scripts": {
-    "test": "start: \"node app.js\" ",
     "start": "node index.js"
   },
   "repository": {

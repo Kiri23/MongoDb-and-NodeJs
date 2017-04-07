@@ -56,7 +56,7 @@ app.use(function(err, req, res, next) {
   res.send("error page not found");
 });
 
-app.listen(4002, function () {
+app.listen(process.env.PORT ||4002, function () {
    console.log('App listening on port 3000!')
 })
 
