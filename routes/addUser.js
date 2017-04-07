@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var kittySchema = require('../model/kitySchema');
 
-var fluffy = new kittySchema({name:"kitty bd"})
+var fluffy = new kittySchema({name:"kitty bd",title:"titulo"})
 /* GET home page. */
 
 router.get('/', function(req, res, next) {

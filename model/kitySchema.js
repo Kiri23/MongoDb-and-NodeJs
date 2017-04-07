@@ -2,7 +2,8 @@ var mongoose = require('mongoose')
 
 
 var kittySchema = mongoose.Schema({
-    name: String
+    name: String,
+    title: String
 });
 
 

@@ -22,7 +22,7 @@ mongoose.connect('mongodb://jose:12345@ds023480.mlab.com:23480/test1');
 //TODO: hello
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
-  // console.log("We're Connected to the database");
+   console.log("We're Connected to the database");
 });
 
 
@@ -56,8 +56,8 @@ app.use(function(err, req, res, next) {
   res.send("error page not found");
 });
 
-app.listen(3000, function () {
-  // console.log('App listening on port 3000!')
+app.listen(3001, function () {
+   console.log('App listening on port 3000!')
 })
 
 module.exports = app;
