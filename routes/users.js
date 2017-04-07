@@ -17,9 +17,9 @@ router.get('/s', (req, res, next) => {
 router.get('/search', (req, res, next) => {
   kitySchema.find(function (err, kittens) {
       if (err) return console.error(err);
-      kitten = kittens[0].name
+      kitten = kittens[4].name
       console.log(kitten);
-     res.send("Usuario: "+kittens[0].name);
+     res.send("Usuario: "+kitten);
 });
 
  // res.send("hola retrieving user: " + kitten);
